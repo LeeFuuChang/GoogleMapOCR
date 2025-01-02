@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <h1>Welcome to Image Upload Server</h1>
+    <p>Select an image to upload:</p>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="image" />
+        <button type="submit">Upload</button>
+    </form>
+    <p id="response"></p>
+    <script src="upload.js"></script>
+</body>
+</html>

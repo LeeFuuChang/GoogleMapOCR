@@ -1,0 +1,19 @@
+html, body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin: 20px;
+}
+
+#map {
+  height: 100%;
+}
