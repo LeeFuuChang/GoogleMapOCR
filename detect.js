@@ -22,16 +22,7 @@ const CREDENTIALS = {
         "https://www.googleapis.com/robot/v1/metadata/x509/guest-810%40ocr-guest.iam.gserviceaccount.com",
     universe_domain: "googleapis.com",
 };
-const KEYWORDS = [
-    "宮",
-    "廟",
-    "壇",
-    "殿",
-    "府",
-    "台",
-    "堂",
-    "歲",
-];
+const KEYWORDS = ["宮", "廟", "壇", "殿", "府", "台", "堂", "歲"];
 const DELTA_X_ALLOWED = 0;
 const DELTA_Y_ALLOWED = 20;
 const DELTA_D_ALLOWED = 10;
@@ -139,28 +130,33 @@ async function Detect(request) {
     });
 
     let extracted = [];
-    for(let s of sentences) {
-        if(KEYWORDS.some(word => s[s.length - 1] == word)) {
-            extracted.push({isRoad: false, name: s});
+    for (let s of sentences) {
+        if (KEYWORDS.some((word) => s[s.length - 1] == word)) {
+            extracted.push({ isRoad: false, name: s });
             continue;
-        }
-        else {
+        } else {
             let res = streetsAC.search(s);
-            for(let match of res) {
-                for(let word of match[1]) {
+            for (let match of res) {
+                for (let word of match[1]) {
                     let appeared = false;
-                    for(let i=extracted.length-1; i >= Math.max(0, extracted.length-2) && extracted[i].isRoad; i--) {
-                        if(extracted[i].name == word) {
+                    for (
+                        let i = extracted.length - 1;
+                        i >= Math.max(0, extracted.length - 2) &&
+                        extracted[i].isRoad;
+                        i--
+                    ) {
+                        if (extracted[i].name == word) {
                             extracted.splice(i, 1);
                         }
                     }
-                    if(!appeared) {
-                        extracted.push({isRoad: true, name: word});
+                    if (!appeared) {
+                        extracted.push({ isRoad: true, name: word });
                     }
                 }
             }
         }
     }
+    // console.log(extracted);
     return extracted;
 
     // let previousCross = [];

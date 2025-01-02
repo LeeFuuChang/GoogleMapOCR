@@ -6,7 +6,7 @@ document.getElementById("uploadForm").onsubmit = async function (e) {
         body: formData,
     });
     const result = await response.json();
-    document.getElementById("response").textContent = JSON.stringify(
-        result.detection
-    );
+    document.body.innerHTML = `<div id="map"></div>`;
+    initMap();
+    markAndConnect(result.detection);
 };
