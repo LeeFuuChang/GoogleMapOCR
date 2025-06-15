@@ -2,8 +2,8 @@ const AhoCorasick = require("ahocorasick");
 
 const streetsJson = require("./streets.json");
 console.log(`Loaded streets count: ${streetsJson.result.length}`);
-const streets = [...new Set(streetsJson["result"])];
-console.log(`Loaded streets count after remove duplicate: ${streets.length}`);
+const streets = [...new Set(streetsJson.result)];
+console.log(`Loaded streets count after removing duplicate: ${streets.length}`);
 const streetsAC = new AhoCorasick(streets);
 
 const vision = require("@google-cloud/vision");
@@ -130,91 +130,30 @@ async function Detect(request) {
     });
 
     let extracted = [];
-    for (let s of sentences) {
-        if (KEYWORDS.some((word) => s[s.length - 1] == word)) {
+    for(let s of sentences) {
+        if(KEYWORDS.some((word)=>(s[s.length-1] == word))) {
             extracted.push({ isRoad: false, name: s });
-            continue;
-        } else {
+        }
+        else {
             let res = streetsAC.search(s);
-            for (let match of res) {
-                for (let word of match[1]) {
-                    let appeared = false;
-                    for (
+            for(let match of res) {
+                for(let word of match[1]) {
+                    for(
                         let i = extracted.length - 1;
-                        i >= Math.max(0, extracted.length - 2) &&
-                        extracted[i].isRoad;
+                        i >= Math.max(0, extracted.length - 2) && extracted[i].isRoad;
                         i--
                     ) {
-                        if (extracted[i].name == word) {
+                        if(extracted[i].name == word) {
                             extracted.splice(i, 1);
                         }
                     }
-                    if (!appeared) {
-                        extracted.push({ isRoad: true, name: word });
-                    }
+                    extracted.push({ isRoad: true, name: word });
                 }
             }
         }
     }
-    // console.log(extracted);
+
     return extracted;
-
-    // let previousCross = [];
-    // for(let i=extracted.length-1; i>=0; i--) {
-    //     if(extracted[i].isRoad) {
-    //         if(previousCross.includes(extracted[i].name)) {
-    //             extracted.splice(i, 1);
-    //         }
-    //         else {
-    //             previousCross.push(extracted[i].name);
-    //             if(previousCross.length > 2) {
-    //                 previousCross.splice(0, 1);
-    //             }
-    //         }
-    //     }
-    //     else {
-    //         previousCross = [];
-    //     }
-    // }
-
-    // console.log(extracted);
-    // for(let i=0; i<extracted.length-1; ) {
-    //     if(extracted.slice(i+1, i+3).some(d=>d.name==extracted[i].name)) {
-    //         extracted.splice(i, 1);
-    //     }
-    //     else {
-    //         i += 1;
-    //     }
-    // }
-    // console.log(extracted);
-
-    // let paired = [];
-    // let prevRoad = null;
-    // for(let i=0; i<extracted.length; i++) {
-    //     if(extracted[i].isRoad) {
-    //         if(!prevRoad) {
-    //             prevRoad = extracted[i].name;
-    //         }
-    //         else if(extracted[i].name != prevRoad) {
-    //             paired.push(prevRoad + '&' + extracted[i].name);
-    //             prevRoad = extracted[i].name;
-    //         }
-    //     }
-    //     else {
-    //         paired.push(extracted[i].name);
-    //     }
-    // }
-    // console.log(paired);
-
-    // sentences = sentences.filter((sentence) => {
-    //     for (word of KEYWORDS) {
-    //         if (sentence[sentence.length - 1] == word) {
-    //             return true;
-    //         }
-    //     }
-    //     return false;
-    // });
-    // return sentences;
 }
 
 module.exports = Detect;

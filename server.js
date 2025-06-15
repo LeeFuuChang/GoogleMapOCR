@@ -16,7 +16,7 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "map.html"));
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.post("/upload", upload.single("image"), (req, res) => {
@@ -28,5 +28,5 @@ app.post("/upload", upload.single("image"), (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on PORT(${PORT})`);
 });
