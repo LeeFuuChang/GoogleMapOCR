@@ -1,3 +1,11 @@
+const AhoCorasick = require("ahocorasick");
+
+const streetsJson = require("./streets.json");
+console.log(`Loaded streets count: ${streetsJson.result.length}`);
+const streets = [...new Set(streetsJson.result)];
+console.log(`Loaded streets count after removing duplicate: ${streets.length}`);
+const streetsAC = new AhoCorasick(streets);
+
 const vision = require("@google-cloud/vision");
 const CREDENTIALS = {
     type: "service_account",
@@ -14,16 +22,7 @@ const CREDENTIALS = {
         "https://www.googleapis.com/robot/v1/metadata/x509/guest-810%40ocr-guest.iam.gserviceaccount.com",
     universe_domain: "googleapis.com",
 };
-const KEYWORDS = [
-    "宮",
-    "廟",
-    "壇",
-    "殿",
-    "府",
-    "台",
-    "堂",
-    "歲",
-];
+const KEYWORDS = ["宮", "廟", "壇", "殿", "府", "台", "堂", "歲"];
 const DELTA_X_ALLOWED = 0;
 const DELTA_Y_ALLOWED = 20;
 const DELTA_D_ALLOWED = 10;
@@ -105,8 +104,8 @@ function MakeGroups(annotations) {
     return groups;
 }
 
-async function Detect(imagePath) {
-    let [result] = await client.textDetection(imagePath);
+async function Detect(request) {
+    let [result] = await client.textDetection(request);
     let annotations = Array.from(result.textAnnotations);
     annotations.shift();
 
@@ -129,15 +128,32 @@ async function Detect(imagePath) {
             })
             .join("");
     });
-    sentences = sentences.filter((sentence) => {
-        for (word of KEYWORDS) {
-            if (sentence[sentence.length - 1] == word) {
-                return true;
+
+    let extracted = [];
+    for(let s of sentences) {
+        if(KEYWORDS.some((word)=>(s[s.length-1] == word))) {
+            extracted.push({ isRoad: false, name: s });
+        }
+        else {
+            let res = streetsAC.search(s);
+            for(let match of res) {
+                for(let word of match[1]) {
+                    for(
+                        let i = extracted.length - 1;
+                        i >= Math.max(0, extracted.length - 2) && extracted[i].isRoad;
+                        i--
+                    ) {
+                        if(extracted[i].name == word) {
+                            extracted.splice(i, 1);
+                        }
+                    }
+                    extracted.push({ isRoad: true, name: word });
+                }
             }
         }
-        return false;
-    });
-    return sentences;
+    }
+
+    return extracted;
 }
 
-Detect("images/image2.jpg").then(console.log);
+module.exports = Detect;

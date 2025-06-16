@@ -1,0 +1,872 @@
+[
+    {
+        "block_id": 0,
+        "id": 0,
+        "line_id": 0,
+        "text": "上"
+    },
+    {
+        "block_id": 0,
+        "id": 1,
+        "line_id": 0,
+        "text": "午"
+    },
+    {
+        "block_id": 0,
+        "id": 2,
+        "line_id": 0,
+        "text": "口"
+    },
+    {
+        "block_id": 0,
+        "id": 3,
+        "line_id": 0,
+        "text": "時"
+    },
+    {
+        "block_id": 0,
+        "id": 4,
+        "line_id": 0,
+        "text": "三"
+    },
+    {
+        "block_id": 0,
+        "id": 5,
+        "line_id": 0,
+        "text": "炮"
+    },
+    {
+        "block_id": 0,
+        "id": 6,
+        "line_id": 0,
+        "text": "啟"
+    },
+    {
+        "block_id": 0,
+        "id": 7,
+        "line_id": 0,
+        "text": "钉"
+    },
+    {
+        "block_id": 0,
+        "id": 8,
+        "line_id": 1,
+        "text": "直"
+    },
+    {
+        "block_id": 0,
+        "id": 9,
+        "line_id": 1,
+        "text": "行"
+    },
+    {
+        "block_id": 0,
+        "id": 10,
+        "line_id": 1,
+        "text": "美"
+    },
+    {
+        "block_id": 0,
+        "id": 11,
+        "line_id": 1,
+        "text": "樂"
+    },
+    {
+        "block_id": 0,
+        "id": 12,
+        "line_id": 1,
+        "text": "街"
+    },
+    {
+        "block_id": 0,
+        "id": 13,
+        "line_id": 2,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 14,
+        "line_id": 2,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 15,
+        "line_id": 2,
+        "text": "健"
+    },
+    {
+        "block_id": 0,
+        "id": 16,
+        "line_id": 2,
+        "text": "康"
+    },
+    {
+        "block_id": 0,
+        "id": 17,
+        "line_id": 2,
+        "text": "路"
+    },
+    {
+        "block_id": 0,
+        "id": 18,
+        "line_id": 2,
+        "text": "三"
+    },
+    {
+        "block_id": 0,
+        "id": 19,
+        "line_id": 2,
+        "text": "段"
+    },
+    {
+        "block_id": 0,
+        "id": 20,
+        "line_id": 3,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 21,
+        "line_id": 3,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 22,
+        "line_id": 3,
+        "text": "建"
+    },
+    {
+        "block_id": 0,
+        "id": 23,
+        "line_id": 3,
+        "text": "車"
+    },
+    {
+        "block_id": 0,
+        "id": 24,
+        "line_id": 3,
+        "text": "路"
+    },
+    {
+        "block_id": 0,
+        "id": 25,
+        "line_id": 4,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 26,
+        "line_id": 4,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 27,
+        "line_id": 4,
+        "text": "建"
+    },
+    {
+        "block_id": 0,
+        "id": 28,
+        "line_id": 4,
+        "text": "平"
+    },
+    {
+        "block_id": 0,
+        "id": 29,
+        "line_id": 4,
+        "text": "二"
+    },
+    {
+        "block_id": 0,
+        "id": 30,
+        "line_id": 4,
+        "text": "街"
+    },
+    {
+        "block_id": 0,
+        "id": 31,
+        "line_id": 5,
+        "text": "左"
+    },
+    {
+        "block_id": 0,
+        "id": 32,
+        "line_id": 5,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 33,
+        "line_id": 5,
+        "text": "永"
+    },
+    {
+        "block_id": 0,
+        "id": 34,
+        "line_id": 5,
+        "text": "華"
+    },
+    {
+        "block_id": 0,
+        "id": 35,
+        "line_id": 5,
+        "text": "二"
+    },
+    {
+        "block_id": 0,
+        "id": 36,
+        "line_id": 5,
+        "text": "街"
+    },
+    {
+        "block_id": 0,
+        "id": 37,
+        "line_id": 6,
+        "text": "一"
+    },
+    {
+        "block_id": 0,
+        "id": 38,
+        "line_id": 6,
+        "text": "良"
+    },
+    {
+        "block_id": 0,
+        "id": 39,
+        "line_id": 6,
+        "text": "寶"
+    },
+    {
+        "block_id": 0,
+        "id": 40,
+        "line_id": 6,
+        "text": "宮"
+    },
+    {
+        "block_id": 0,
+        "id": 41,
+        "line_id": 6,
+        "text": "行"
+    },
+    {
+        "block_id": 0,
+        "id": 42,
+        "line_id": 6,
+        "text": "台"
+    },
+    {
+        "block_id": 0,
+        "id": 43,
+        "line_id": 7,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 44,
+        "line_id": 7,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 45,
+        "line_id": 7,
+        "text": "永"
+    },
+    {
+        "block_id": 0,
+        "id": 46,
+        "line_id": 7,
+        "text": "華"
+    },
+    {
+        "block_id": 0,
+        "id": 47,
+        "line_id": 7,
+        "text": "路"
+    },
+    {
+        "block_id": 0,
+        "id": 48,
+        "line_id": 7,
+        "text": "二"
+    },
+    {
+        "block_id": 0,
+        "id": 49,
+        "line_id": 7,
+        "text": "段"
+    },
+    {
+        "block_id": 0,
+        "id": 50,
+        "line_id": 8,
+        "text": "左"
+    },
+    {
+        "block_id": 0,
+        "id": 51,
+        "line_id": 8,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 52,
+        "line_id": 8,
+        "text": "永"
+    },
+    {
+        "block_id": 0,
+        "id": 53,
+        "line_id": 8,
+        "text": "華"
+    },
+    {
+        "block_id": 0,
+        "id": 54,
+        "line_id": 8,
+        "text": "一"
+    },
+    {
+        "block_id": 0,
+        "id": 55,
+        "line_id": 8,
+        "text": "街"
+    },
+    {
+        "block_id": 0,
+        "id": 56,
+        "line_id": 9,
+        "text": "左"
+    },
+    {
+        "block_id": 0,
+        "id": 57,
+        "line_id": 9,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 58,
+        "line_id": 9,
+        "text": "中"
+    },
+    {
+        "block_id": 0,
+        "id": 59,
+        "line_id": 9,
+        "text": "華"
+    },
+    {
+        "block_id": 0,
+        "id": 60,
+        "line_id": 9,
+        "text": "麼"
+    },
+    {
+        "block_id": 0,
+        "id": 61,
+        "line_id": 9,
+        "text": "躇"
+    },
+    {
+        "block_id": 0,
+        "id": 62,
+        "line_id": 9,
+        "text": "二"
+    },
+    {
+        "block_id": 0,
+        "id": 63,
+        "line_id": 9,
+        "text": "段"
+    },
+    {
+        "block_id": 0,
+        "id": 64,
+        "line_id": 9,
+        "text": "廿"
+    },
+    {
+        "block_id": 0,
+        "id": 65,
+        "line_id": 9,
+        "text": "八"
+    },
+    {
+        "block_id": 0,
+        "id": 66,
+        "line_id": 9,
+        "text": "巷"
+    },
+    {
+        "block_id": 0,
+        "id": 67,
+        "line_id": 10,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 68,
+        "line_id": 10,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 69,
+        "line_id": 10,
+        "text": "美"
+    },
+    {
+        "block_id": 0,
+        "id": 70,
+        "line_id": 10,
+        "text": "學"
+    },
+    {
+        "block_id": 0,
+        "id": 71,
+        "line_id": 10,
+        "text": "街"
+    },
+    {
+        "block_id": 0,
+        "id": 72,
+        "line_id": 11,
+        "text": "一"
+    },
+    {
+        "block_id": 0,
+        "id": 73,
+        "line_id": 11,
+        "text": "廲"
+    },
+    {
+        "block_id": 0,
+        "id": 74,
+        "line_id": 11,
+        "text": "城"
+    },
+    {
+        "block_id": 0,
+        "id": 75,
+        "line_id": 11,
+        "text": "殿"
+    },
+    {
+        "block_id": 0,
+        "id": 76,
+        "line_id": 11,
+        "text": "行"
+    },
+    {
+        "block_id": 0,
+        "id": 77,
+        "line_id": 11,
+        "text": "台"
+    },
+    {
+        "block_id": 0,
+        "id": 78,
+        "line_id": 12,
+        "text": "左"
+    },
+    {
+        "block_id": 0,
+        "id": 79,
+        "line_id": 12,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 80,
+        "line_id": 12,
+        "text": "府"
+    },
+    {
+        "block_id": 0,
+        "id": 81,
+        "line_id": 12,
+        "text": "前"
+    },
+    {
+        "block_id": 0,
+        "id": 82,
+        "line_id": 12,
+        "text": "路"
+    },
+    {
+        "block_id": 0,
+        "id": 83,
+        "line_id": 12,
+        "text": "二"
+    },
+    {
+        "block_id": 0,
+        "id": 84,
+        "line_id": 12,
+        "text": "段"
+    },
+    {
+        "block_id": 0,
+        "id": 85,
+        "line_id": 13,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 86,
+        "line_id": 13,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 87,
+        "line_id": 13,
+        "text": "府"
+    },
+    {
+        "block_id": 0,
+        "id": 88,
+        "line_id": 13,
+        "text": "前"
+    },
+    {
+        "block_id": 0,
+        "id": 89,
+        "line_id": 13,
+        "text": "一"
+    },
+    {
+        "block_id": 0,
+        "id": 90,
+        "line_id": 13,
+        "text": "街"
+    },
+    {
+        "block_id": 0,
+        "id": 91,
+        "line_id": 14,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 92,
+        "line_id": 14,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 93,
+        "line_id": 14,
+        "text": "大"
+    },
+    {
+        "block_id": 0,
+        "id": 94,
+        "line_id": 14,
+        "text": "涼"
+    },
+    {
+        "block_id": 0,
+        "id": 95,
+        "line_id": 14,
+        "text": "路"
+    },
+    {
+        "block_id": 0,
+        "id": 96,
+        "line_id": 15,
+        "text": "一"
+    },
+    {
+        "block_id": 0,
+        "id": 97,
+        "line_id": 15,
+        "text": "南"
+    },
+    {
+        "block_id": 0,
+        "id": 98,
+        "line_id": 15,
+        "text": "廠"
+    },
+    {
+        "block_id": 0,
+        "id": 99,
+        "line_id": 15,
+        "text": "順"
+    },
+    {
+        "block_id": 0,
+        "id": 100,
+        "line_id": 15,
+        "text": "天"
+    },
+    {
+        "block_id": 0,
+        "id": 101,
+        "line_id": 15,
+        "text": "宮"
+    },
+    {
+        "block_id": 0,
+        "id": 102,
+        "line_id": 15,
+        "text": "行"
+    },
+    {
+        "block_id": 0,
+        "id": 103,
+        "line_id": 15,
+        "text": "台"
+    },
+    {
+        "block_id": 0,
+        "id": 104,
+        "line_id": 16,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 105,
+        "line_id": 16,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 106,
+        "line_id": 16,
+        "text": "金"
+    },
+    {
+        "block_id": 0,
+        "id": 107,
+        "line_id": 16,
+        "text": "華"
+    },
+    {
+        "block_id": 0,
+        "id": 108,
+        "line_id": 16,
+        "text": "新"
+    },
+    {
+        "block_id": 0,
+        "id": 109,
+        "line_id": 16,
+        "text": "踖"
+    },
+    {
+        "block_id": 0,
+        "id": 110,
+        "line_id": 17,
+        "text": "一"
+    },
+    {
+        "block_id": 0,
+        "id": 111,
+        "line_id": 17,
+        "text": "朱"
+    },
+    {
+        "block_id": 0,
+        "id": 112,
+        "line_id": 17,
+        "text": "天"
+    },
+    {
+        "block_id": 0,
+        "id": 113,
+        "line_id": 17,
+        "text": "府"
+    },
+    {
+        "block_id": 0,
+        "id": 114,
+        "line_id": 17,
+        "text": "行"
+    },
+    {
+        "block_id": 0,
+        "id": 115,
+        "line_id": 17,
+        "text": "台"
+    },
+    {
+        "block_id": 0,
+        "id": 116,
+        "line_id": 18,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 117,
+        "line_id": 18,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 118,
+        "line_id": 18,
+        "text": "府"
+    },
+    {
+        "block_id": 0,
+        "id": 119,
+        "line_id": 18,
+        "text": "前"
+    },
+    {
+        "block_id": 0,
+        "id": 120,
+        "line_id": 18,
+        "text": "路"
+    },
+    {
+        "block_id": 0,
+        "id": 121,
+        "line_id": 18,
+        "text": "二"
+    },
+    {
+        "block_id": 0,
+        "id": 122,
+        "line_id": 18,
+        "text": "段"
+    },
+    {
+        "block_id": 0,
+        "id": 123,
+        "line_id": 18,
+        "text": "二"
+    },
+    {
+        "block_id": 0,
+        "id": 124,
+        "line_id": 18,
+        "text": "五"
+    },
+    {
+        "block_id": 0,
+        "id": 125,
+        "line_id": 18,
+        "text": "八"
+    },
+    {
+        "block_id": 0,
+        "id": 126,
+        "line_id": 18,
+        "text": "巷"
+    },
+    {
+        "block_id": 0,
+        "id": 127,
+        "line_id": 19,
+        "text": "一"
+    },
+    {
+        "block_id": 0,
+        "id": 128,
+        "line_id": 19,
+        "text": "烏"
+    },
+    {
+        "block_id": 0,
+        "id": 129,
+        "line_id": 19,
+        "text": "橋"
+    },
+    {
+        "block_id": 0,
+        "id": 130,
+        "line_id": 19,
+        "text": "新"
+    },
+    {
+        "block_id": 0,
+        "id": 131,
+        "line_id": 19,
+        "text": "南"
+    },
+    {
+        "block_id": 0,
+        "id": 132,
+        "line_id": 19,
+        "text": "宮"
+    },
+    {
+        "block_id": 0,
+        "id": 133,
+        "line_id": 20,
+        "text": "直"
+    },
+    {
+        "block_id": 0,
+        "id": 134,
+        "line_id": 20,
+        "text": "行"
+    },
+    {
+        "block_id": 0,
+        "id": 135,
+        "line_id": 20,
+        "text": "府"
+    },
+    {
+        "block_id": 0,
+        "id": 136,
+        "line_id": 20,
+        "text": "前"
+    },
+    {
+        "block_id": 0,
+        "id": 137,
+        "line_id": 20,
+        "text": "路"
+    },
+    {
+        "block_id": 0,
+        "id": 138,
+        "line_id": 20,
+        "text": "二"
+    },
+    {
+        "block_id": 0,
+        "id": 139,
+        "line_id": 20,
+        "text": "段"
+    },
+    {
+        "block_id": 0,
+        "id": 140,
+        "line_id": 21,
+        "text": "右"
+    },
+    {
+        "block_id": 0,
+        "id": 141,
+        "line_id": 21,
+        "text": "轉"
+    },
+    {
+        "block_id": 0,
+        "id": 142,
+        "line_id": 21,
+        "text": "南"
+    },
+    {
+        "block_id": 0,
+        "id": 143,
+        "line_id": 21,
+        "text": "華"
+    },
+    {
+        "block_id": 0,
+        "id": 144,
+        "line_id": 21,
+        "text": "街"
+    }
+]

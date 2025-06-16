@@ -20,7 +20,10 @@ app.get("/", (req, res) => {
 });
 
 app.post("/upload", upload.single("image"), (req, res) => {
-    Detect(req.file.buffer).then((result) => {
+    Detect({
+        name: req.file.originalname,
+        buffer: req.file.buffer,
+    }).then((result) => {
         res.status(200).send({
             detection: result,
         });
